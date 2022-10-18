@@ -275,7 +275,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 3.5625rem;
   letter-spacing: 0.165rem;
   margin-bottom: 46px;
-  max-width: 346px;
+  max-width: 400px;
 }
 @media (max-width: 665px) {
   .content__title {
@@ -371,7 +371,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .about__title {
-  max-width: 300px;
+  max-width: 400px;
   margin-bottom: 37px;
 }
 .about__text {
@@ -489,7 +489,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   line-height: 3.5625rem;
   letter-spacing: 0.06375rem;
-  padding: 0px 45px;
+  padding: 0px 40px;
   border-radius: 26px;
   border: 2px solid #f1cdb3;
   transition: 0.5s linear;
@@ -521,7 +521,7 @@ h1, h2, h3, h4, h5, h6 {
 .help__titel {
   margin: 0px auto;
   text-align: center;
-  max-width: 316px;
+  max-width: 400px;
 }
 .help__content {
   margin-top: 80px;
