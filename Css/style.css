@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-  maxwidth: 100%;
+  max-width: 100%;
 }
 
 .header {
@@ -128,9 +128,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0;
   }
 }
-.header__logo {
-  margin-right: 5px;
-}
+
 .menu__burger {
   background: none;
 }
@@ -151,6 +149,7 @@ h1, h2, h3, h4, h5, h6 {
 .menu .active-burger {
   border-color: #292929;
 }
+
 .menu .active-burger-element:not(:first-child) {
   margin-top: 0;
 }
@@ -167,6 +166,9 @@ h1, h2, h3, h4, h5, h6 {
   .menu__list {
     display: none;
   }
+}
+.menu {
+  margin-left: 5px;
 }
 .menu__item {
   display: inline-block;
