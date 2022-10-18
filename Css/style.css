@@ -23,6 +23,7 @@ nav, footer, header, aside {
 }
 
 html, body {
+  scroll-behavior: smooth;
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -123,12 +124,44 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 665px) {
   .header__container {
-    justify-content: center;
+    justify-content: space-around;
     line-height: 0;
   }
 }
 .header__logo {
   margin-right: 5px;
+}
+.menu__burger {
+  background: none;
+}
+.menu__burger .burger-element {
+  display: none;
+  background-color: #fff;
+  width: 25px;
+  height: 2px;
+}
+.menu__burger .burger-element:not(:first-child) {
+  margin-top: 5px;
+}
+@media (max-width: 480px) {
+  .menu__burger .burger-element {
+    display: block;
+  }
+}
+.menu .active-burger {
+  border-color: #292929;
+}
+.menu .active-burger-element:not(:first-child) {
+  margin-top: 0;
+}
+.menu .active-burger-element-01 {
+  transform: rotate(45deg);
+}
+.menu .active-burger-element-02 {
+  display: none;
+}
+.menu .active-burger-element-03 {
+  transform: rotate(-45deg);
 }
 @media (max-width: 480px) {
   .menu__list {
@@ -672,6 +705,9 @@ main {
 .contact {
   margin-right: 10px;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .contact__title {
   max-width: 273px;
@@ -683,20 +719,25 @@ main {
   letter-spacing: 0.13125rem;
   margin-bottom: 45px;
 }
+.contact__item-01 {
+  margin-bottom: 48px;
+}
 .contact__email {
-  display: block;
+  display: inline-block;
   color: #f1cdb3;
   font-family: "Times New Roman PSMT";
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 2.8125rem;
   letter-spacing: 0.075rem;
-  margin-bottom: 48px;
   padding-left: 62px;
   background: url("../Images/mail.svg") 0 0 no-repeat;
 }
+.contact__email:hover {
+  text-decoration: underline;
+}
 .contact__telephone {
-  display: block;
+  display: inline-block;
   color: #f1cdb3;
   font-family: "Times New Roman PSMT";
   font-size: 1.25rem;
@@ -706,10 +747,16 @@ main {
   padding-left: 62px;
   background: url("../Images/telephone.svg") 0 0 no-repeat;
 }
+.contact__telephone:hover {
+  text-decoration: underline;
+}
 
 .address {
   margin-bottom: 20px;
   margin-right: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 @media (max-width: 964px) {
   .address {
@@ -726,20 +773,25 @@ main {
   letter-spacing: 0.13125rem;
   margin-bottom: 45px;
 }
+.address__item-01 {
+  margin-bottom: 34px;
+}
 .address .address-one {
-  display: block;
-  max-width: 291px;
+  display: inline-block;
+  max-width: 271px;
   color: #f1cdb3;
   font-family: "Times New Roman PSMT";
   font-size: 1.25rem;
   font-weight: 400;
   letter-spacing: 0.075rem;
-  margin-bottom: 34px;
   padding-left: 46px;
   background: url("../Images/pin.svg") 0 0 no-repeat;
 }
+.address .address-one:hover {
+  text-decoration: underline;
+}
 .address .address-two {
-  display: block;
+  display: inline-block;
   max-width: 291px;
   color: #f1cdb3;
   font-family: "Times New Roman PSMT";
@@ -748,4 +800,7 @@ main {
   letter-spacing: 0.075rem;
   padding-left: 46px;
   background: url("../Images/pin.svg") 0 0 no-repeat;
+}
+.address .address-two:hover {
+  text-decoration: underline;
 }
