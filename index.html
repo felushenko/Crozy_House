@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/style.css">
+    <link rel="icon" href="Images/logo.svg">
     <title>Crozy House</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
         <header class="header">
             <div class="header__container">
                 <a href="" class="header__logo" alt="logo">
-                    <img src="Images/logo.svg" alt="" class="logo">
+                    <img src="/Images/logo.svg" alt="" class="logo">
                     
                     <nav class="header__menu menu">
                         <ul class="menu__list">
@@ -37,6 +38,11 @@
                                 </a>
                             </li>
                         </ul>
+                        <button id="btn-burger" class="menu__burger">
+                            <div class="burger-element"></div>
+                            <div class="burger-element"></div>
+                            <div class="burger-element"></div>
+                        </button>
                     </nav>
                 </a>
             </div>
@@ -47,7 +53,7 @@
                     <div class="mian__content content">
                         <h1 class="content__title">Not only people need a house</h1>
                         <p class="content__sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida est in porttitor  porttitor. Duis sodales elementum ipsum, vehicula condimentum erat fringilla et.</p>
-                        <a href="#" class="content__button button">Make a friend</a>
+                        <a href="#our" class="content__button button">Make a friend</a>
                     </div>
                     <img src="Images/Main_page/img-main-page.png" alt="Dog" class="main__img">
                 </div>
@@ -151,7 +157,7 @@
                     </div>
                 </div>
             </section>
-            <section id="donation" class="page__donation donation">
+            <section class="page__donation donation">
                 <div class="donation__container">
                     <img src="Images/donation_page/donation-img.png" alt="" class="donation__img">
                     <div class="donation__content">
@@ -172,25 +178,35 @@
             <div class="footer__container">
                 <div class="footer__contact contact">
                     <h2 class="contact__title">For questions and suggestions</h2>
-                    <a href="" class="contact__email">
-                        email@shelter.com
-                    </a>
-                    <a href="" class="contact__telephone">
-                        +13 674 567 75 54
-                    </a>
+                    <div class="contact__item-01">
+                        <a href="mailto:email@shelter.com" class="contact__email">
+                            email@shelter.com
+                        </a>
+                    </div>
+                    <div class="contact__item-02">
+                        <a href="tel:+136745677554" class="contact__telephone">
+                            +13 674 567 75 54
+                        </a>
+                    </div>
                 </div>
                 <div class="footer__address address">
                     <h2 class="address__title">We are waiting for your visit</h2>
-                    <a href="" class="address-one">
-                        Boston, Central Street, 1st (Entrance from the store)
-                    </a>
-                    <a href="" class="address-two">
-                        London, South Park, 18st
-                    </a>
+                    <div class="address__item-01">
+                        <a href="https://www.google.com/maps/search/Boston,+Central+Street,+1st+(Entrance+from+the+store)/@42.3142643,-71.1107112,11z/data=!3m1!4b1" class="address-one" target="_blank">
+                            Boston, Central Street, 1st (Entrance from the store)
+                        </a>
+                    </div>
+                    <div class="address__item-02">
+                        <a href="https://www.google.com/maps/search/London,+South+Park,+18st/@51.50464,-0.1654548,12z/data=!3m1!4b1" class="address-two" target="_blank">
+                            London, South Park, 18st
+                        </a>
+                    </div>
                 </div>
                 <img src="Images/Dog-footer.png" alt="dog" class="footer__img">
             </div>
         </footer>
     </div>
+    
+    <script src="Js/script.js"></script>
 </body>
 </html>
