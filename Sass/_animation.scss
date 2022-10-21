@@ -1,0 +1,40 @@
+@keyframes opacity {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes left_nomination  {
+    0% {
+        transform: translate(-100%);
+        opacity: 0;
+    }
+    
+}
+
+@keyframes left_nomination_plus  {
+    0% {
+        transform: translate(-100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(10%);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes right_nomination  {
+    0% {
+        transform: translate(100%);
+        opacity: 0;
+    }
+    
+}
+
+@keyframes bottom_nomination  {
+    0% {
+        transform: translate(0,100%);
+        opacity: 0;
+    }
+    
+}
