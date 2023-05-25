@@ -1,13 +1,15 @@
 
-
-const burger = document.querySelector('.header__burger')
+let burger = document.getElementById('burger')
 
 burger.onclick = function() {
   burger.classList.toggle('header__burger-active')
   document.querySelector('.header__burger>span').classList.toggle('span-active')
   document.querySelector('.menu').classList.toggle('menu-active')
   document.querySelector('body').classList.toggle('lock')
+  document.querySelector('header').classList.toggle('burger-lock')
 }
+
+
 
 const animItems = document.querySelectorAll('._anime-items')
 
