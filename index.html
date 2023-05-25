@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/style.css">
     <link rel="icon" href="Images/logo.svg">
+    
     <title>Crozy House</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
                     <a href="" class="header__logo">
                         <img src="Images/logo.svg"  alt="logo" class="logo">
                     </a>
-                    <div class="header__burger">
+                    <div id="burger" class="header__burger">
                         <span></span>
                     </div>
                     <nav class="header__menu menu">
@@ -84,28 +85,32 @@
                     <h2 class="our-friends__title title _anime-items">
                         Our friends who<br>are looking for a house
                     </h2>
-                    <div class="our-friends__slider slider">
-                        <div class="slider__btt-back"></div>
-                        <div class="slider__content">
-                            <div class="slider__section slider__section-1">
+
+
+                    <div class="swiper our-friends__slider slider">
+                        
+                        <div class="swiper-wrapper slider__content">
+                            <div class="swiper-slide slider__section slider__section-1">
                                 <img src="Images/Our-friends_page/slider-01.png" alt="" class="slider__animals-img">
                                 <h3 class="slider__titl-namee">Katrine</h3>
                                 <a href="#" class="slider__btt-learn-more">Learn More</a>
                             </div>
-                            <div class="slider__section slider__section-2">
+                            <div class="swiper-slide slider__section slider__section-2">
                                 <img src="Images/Our-friends_page/slider-02.png" alt="" class="slider__animals-img">
                                 <h3 class="slider__titl-namee">Jennifer</h3>
                                 <a href="#" class="slider__btt-learn-more">Learn More</a>
                             </div>
-                            <div class="slider__section slider__section-3">
+                            <div class="swiper-slide slider__section slider__section-3">
                                 <img src="Images/Our-friends_page/slider-03.png" alt="" class="slider__animals-img">
                                 <h3 class="slider__titl-namee">Woody</h3>
                                 <a href="#" class="slider__btt-learn-more">Learn More</a>
                                 
                             </div>
                         </div>
-                        <div class="slider__btt-next"></div>
+                        
                     </div>
+
+                       
                     <div class="btn_animate _anime-items">
                         <a href="" class="our-friends__btt-get-to button">Get to know the rest</a> 
                     </div>
@@ -210,7 +215,8 @@
             </div>
         </footer>
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="Js/script.js"></script>
+    
 </body>
 </html>
